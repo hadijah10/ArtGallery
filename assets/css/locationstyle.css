@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap');
+
+*,*::after,*::before{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --gold: #D5966C;
+    --black:#1d1616;
+    --white: #ffffff;
+    --dark-grey:##444444;
+    --almost-black:#151515;
+}
+
+body{
+    margin: 0px;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+.location{
+    width:100%;
+    background-image: url("../desktop/image-map@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 37.5rem;
+}
+.headingbtn {
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 9.75rem;
+}
+.headingbtn :hover{
+    & .arrowicon{
+        background-color: var(--almost-black);
+    };
+    & .btntext{
+        background-color: var(--gold);
+    }
+}
+.headingbtn >a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+}
+.btntext {
+    flex: 0.8;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--almost-black);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowicon {
+    flex: 0.2;
+    background-color: var(--gold);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 0.5rem;
+    height: 1.3rem;
+}
+
+@media(max-width:992px){
+
+}
+@media(max-width:768px){
+    .location{
+        width:100%;
+        background-image: url("../tablet/image-map@2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 37.5rem;
+    }
+    .headingbtn{
+        margin-left: 2.5rem;
+    }
+ 
+}
+@media (max-width:600px) {
+    .headingbtn {
+        width: 10rem;
+        height: 3rem;
+    }
+    .right {
+        width: 0.5rem;
+        height: 1rem;
+    }
+    .location{
+        width:100%;
+        background-image: url("../tablet/image-map@2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 34.3rem;
+    }
+    .headingbtn{
+        margin-left: 0;
+    }
+    .btntext{
+        font-size: 1rem;
+    }
+ 
+}
