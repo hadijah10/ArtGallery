@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap');
+
+*,*::after,*::before{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+main{
+display: grid;
+grid-template-columns: 1fr;
+row-gap: 7rem;
+}
+:root{
+    --gold: #D5966C;
+    --black:#1d1616;
+    --white: #ffffff;
+    --dark-grey:##444444;
+    --almost-black:#151515;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    grid-template-rows: 50rem;
+}
+.dark-heropart{
+    grid-column: span 7;
+}
+.image{
+    grid-column: span 10;
+}
+.headline{
+    grid-column: span 6;
+    position: relative;
+}
+.dark-heropart{
+    background-color: var(--almost-black);
+    position: relative;
+}
+.heading{
+    position: absolute;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    right:-8.5rem;
+    top: 9rem;
+}
+.image{
+    background-image: url("../desktop/image-hero@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.subheading{
+    position: absolute;
+    top: 9rem;
+    left:-4.5rem;
+    max-width: 20rem;
+    display: grid;
+    gap: 4rem;
+ 
+}
+.sub{
+    display: none;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: var(--almost-black);
+    letter-spacing: 0px;
+   
+}
+p{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.375rem;
+    line-height: 2rem;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.headingbtn {
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    
+}
+.headingbtn :hover{
+    & .arrowicon{
+        background-color: var(--almost-black);
+    };
+    & .btntext{
+        background-color: var(--gold);
+    }
+}
+.headingbtn >a {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+}
+.btntext{
+    flex: 0.8;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--almost-black);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowicon{
+    flex: 0.2;
+    background-color: var(--gold);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width:0.5rem;
+    height: 1.3rem;
+}
+
+@media(max-width:992px){
+    .heading{
+        font-size: 4.5rem;
+        right:-7.5rem;
+    }
+    .subheading >p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+   
+  
+}
+@media(max-width:768px){
+    .hero{
+        grid-template-rows: 43.75rem;
+    }
+    .dark-heropart{
+        display: none;
+    }
+    .image{
+        grid-column: span 14;
+        background-image: url("../desktop/image-hero@2x.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+       
+    .headline{
+        grid-column: span 10;
+    }
+    .subheading{
+        gap:3rem;
+    }
+    .sub{
+        display: block;
+    }
+    .subheading >p{
+        font-size: 1.125rem;
+        line-height: 1.75;
+        font-weight: 300;
+        letter-spacing: 0px;
+
+    }
+ 
+}
+@media(max-width:600px){
+    main{
+        row-gap: 4rem;
+    }
+    .dark-heropart{
+        display: none;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+    }
+    .image{  
+        background-image: url("../mobile/image-hero.jpg");
+        height: 15rem;
+    }
+    .subheading{
+        position: relative;
+        top: 0rem;
+        left:1rem;
+        gap:1rem;
+    }
+  
+    }
