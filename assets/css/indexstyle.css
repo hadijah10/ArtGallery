@@ -51,8 +51,11 @@ row-gap: 7rem;
     font-size: 5rem;
     line-height: 5rem;
     text-transform: uppercase;
-    color: var(--white);
+    right:-8.5rem;
     top: 9rem;
+    background: linear-gradient(to right, var(--white) 64%, var(--black) 50%);
+    background-clip: text;
+    color: transparent;
 }
 .image{
     background-image: url("../desktop/image-hero@2x.jpg");
@@ -101,7 +104,7 @@ p{
     height: 3rem;
     border: none;
     cursor: pointer;
-    
+    margin-left: 9.75rem;
 }
 .headingbtn :hover{
     & .arrowicon{
