@@ -103,7 +103,6 @@ p{
     height: 3rem;
     border: none;
     cursor: pointer;
-    margin-left: 9.75rem;
 }
 .headingbtn :hover{
     & .arrowicon{
