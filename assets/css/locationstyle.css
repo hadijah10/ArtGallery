@@ -28,8 +28,8 @@ body{
     height: 37.5rem;
 }
 .headingbtn {
-    width: 13rem;
-    height: 3rem;
+    width: 16.5rem;
+    height: 4.5rem;
     border: none;
     cursor: pointer;
     margin-left: 9.75rem;
@@ -64,6 +64,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
+    letter-spacing: 3.64px;
 }
 .arrowicon {
     flex: 0.2;
